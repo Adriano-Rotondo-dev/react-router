@@ -13,8 +13,10 @@ export default function HomePage() {
                 />
               </div>
               <div className="col-md-6">
-                <h2 className="display-5 fw-bold">Site Landing Page</h2>
-                <p className="lead">Breve Descrizione</p>
+                <h2 className="display-5 fw-bold">Welcome to Foxy Store!</h2>
+                <p className="lead">
+                  This store is still a Work in Progress! Stay tuned! 🦊
+                </p>
                 <a href="#" className="btn btn-primary btn-lg mt-3">
                   Scopri di più
                 </a>
