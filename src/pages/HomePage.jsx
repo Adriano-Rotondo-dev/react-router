@@ -17,9 +17,6 @@ export default function HomePage() {
                 <p className="lead">
                   This store is still a Work in Progress! Stay tuned! 🦊
                 </p>
-                <a href="#" className="btn btn-primary btn-lg mt-3">
-                  Scopri di più
-                </a>
               </div>
             </div>
           </div>

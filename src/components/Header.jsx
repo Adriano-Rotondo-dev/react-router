@@ -1,3 +1,11 @@
+import { NavLink } from "react-router-dom";
+
+const navLinks = [
+  { id: 1, to: "/", text: "Home" },
+  { id: 2, to: "/about-us", text: "About Us" },
+  { id: 3, to: "/products", text: "Products" },
+];
+
 export default function Header() {
   return (
     <header>
@@ -7,22 +15,20 @@ export default function Header() {
             <h1 className="fw-bold display-3">Foxy Shop</h1>
           </a>
           <ul className="navbar-nav me mt-2 mt-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" href="#" aria-current="page">
-                Home
-                <span className="visually-hidden">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                About Us
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Products
-              </a>
-            </li>
+            {/* RENDO DINAMICA LA NAVBAR  */}
+            {navLinks.map((link) => {
+              return (
+                <li key={link.id} className="nav-item">
+                  <NavLink
+                    className="nav-link"
+                    to={link.to}
+                    aria-current="page"
+                  >
+                    {link.text}
+                  </NavLink>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </nav>
