@@ -1,3 +1,39 @@
 export default function Footer() {
-  return <footer>FOOTER CONTENT WIP</footer>;
+  return (
+    <footer className="bg-light text-center text-lg start py-4 my-5">
+      <div className="container">
+        <div className="row row-cols-md-3">
+          <div className="col">
+            <h3>Company</h3>
+            <ul className="list-unstyled">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+          </div>
+          <div className="col">
+            <h3>Socials</h3>
+            <ul className="list-unstyled">
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-youtube"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+            </ul>
+          </div>
+          <div className="col">
+            <h3>Affiliate Shops</h3>
+            <ul className="list-unstyled">
+              <li>CatPen 😸</li>
+              <li>FrostWolf 🐺 </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }

@@ -12,7 +12,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-sm navbar-light bg-light">
         <div className="container">
           <a className="navbar-brand" href="#">
-            <h1 className="fw-bold display-3">Foxy Shop</h1>
+            <h1 className="fw-bold display-3">Foxy Store</h1>
           </a>
           <ul className="navbar-nav me mt-2 mt-lg-0">
             {/* RENDO DINAMICA LA NAVBAR  */}
