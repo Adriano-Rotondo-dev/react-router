@@ -15,13 +15,13 @@ export default function Footer() {
             <h3>Socials</h3>
             <ul className="list-unstyled">
               <li>
-                <i class="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-facebook"></i>
               </li>
               <li>
-                <i class="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-youtube"></i>
               </li>
               <li>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </li>
             </ul>
           </div>
