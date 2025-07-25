@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
@@ -7,9 +8,12 @@ export default function ProductsPage() {
   useEffect(() => {
     axios
       .get("https://fakestoreapi.com/products")
-      .then((res) => setProducts(res.data))
+      .then((res) => {
+        setProducts(res.data);
+        console.log(res.data);
+      })
       .catch((err) => console.error(err));
-  });
+  }, []);
 
   return (
     <main>
