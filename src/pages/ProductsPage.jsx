@@ -18,7 +18,7 @@ export default function ProductsPage() {
         <div className="row">
           {products.map((product) => (
             <div className="col-md-3 mb-4" key={product.id}>
-              <div className="card h-100">
+              <div className="card h-100 p-3">
                 <img
                   src={product.image}
                   className="card-img-top h-30 W-20 p-3"

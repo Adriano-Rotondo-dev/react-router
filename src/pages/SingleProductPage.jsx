@@ -22,26 +22,28 @@ export default function SingleProductPage() {
     <>
       {/* copia della card singola di product - soluzione temporanea */}
       <div className="container">
-        <div className="card h-100">
-          <img
-            src={product.image}
-            className="card-img-top h-30 W-30 p-3"
-            alt={product.title}
-          />
-          <div className="card-body">
-            <h5 className="card-title">{product.title}</h5>
-            <p className="card-text">{product.description}</p>
-            <p className="card-text">{product.category}</p>
-            {/* rate e count risultano undefined poiché rating è un array annidato
+        <div className="col col-sm-12 p-3">
+          <div className="card d-flex flex-row w-100">
+            <img
+              src={product.image}
+              className="img-fluid p-3"
+              alt={product.title}
+            />
+            <div className="card-body">
+              <h5 className="card-title">{product.title}</h5>
+              <p className="card-text">{product.description}</p>
+              <p className="card-text">{product.category}</p>
+              {/* rate e count risultano undefined poiché rating è un array annidato
               optional chaining ?. per inserirli successivamente al rendering della pagina */}
-            <p className="card-text">
-              Valutazione degli utenti:⭐{product.rating?.rate}
-            </p>
-            <p className="card-text">
-              Numero di voti:
-              {product.rating?.count}
-            </p>
-            <p className="fw-bold text-primary">{product.price} €</p>
+              <p className="card-text">
+                Valutazione degli utenti:⭐{product.rating?.rate}
+              </p>
+              <p className="card-text">
+                Numero di voti:
+                {product.rating?.count}
+              </p>
+              <p className="fw-bold text-primary">{product.price} €</p>
+            </div>
           </div>
         </div>
       </div>
