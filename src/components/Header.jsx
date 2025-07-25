@@ -11,9 +11,9 @@ export default function Header() {
     <header>
       <nav className="navbar navbar-expand-sm navbar-light bg-light">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="/">
             <h1 className="fw-bold display-3">Foxy Store</h1>
-          </a>
+          </NavLink>
           <ul className="navbar-nav me mt-2 mt-lg-0">
             {/* RENDO DINAMICA LA NAVBAR  */}
             {navLinks.map((link) => {
