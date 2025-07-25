@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
           <div className="col">
             <h3>Socials</h3>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled d-flex flex-row align-items-center justify-content-center gap-3">
               <li>
                 <i className="fa-brands fa-facebook"></i>
               </li>

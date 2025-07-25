@@ -12,7 +12,16 @@
 .link {
   color: orange;
 }
-
+button {
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border: 1px solid;
+  transition: 0.2s ease;
+}
+button:active {
+  transform: scale(0.8);
+}
 .product-img {
   max-width: 30rem;
   max-height: 30rem;
