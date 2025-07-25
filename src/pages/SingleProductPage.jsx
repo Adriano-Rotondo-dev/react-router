@@ -26,7 +26,7 @@ export default function SingleProductPage() {
           <div className="card d-flex flex-row w-100">
             <img
               src={product.image}
-              className="img-fluid p-3"
+              className="img-fluid p-5 product-img"
               alt={product.title}
             />
             <div className="card-body">
