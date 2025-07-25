@@ -46,7 +46,9 @@ export default function ProductsPage() {
                     Numero di voti:
                     {product.rating.count}
                   </p>
-                  <p className="fw-bold text-primary">{product.price} €</p>
+                  <p className="fw-bold text-primary">
+                    {product.price.toFixed(2)} €
+                  </p>
                 </div>
               </div>
             </div>

@@ -50,7 +50,10 @@ export default function SingleProductPage() {
                 <span className="fw-bold">Numero di voti:</span>
                 {product.rating?.count}
               </p>
-              <p className="fw-bold text-primary">{product.price} €</p>
+              {/* price .toFixed(2) viene renderizzato con optional chaining .?  */}
+              <p className="fw-bold text-primary">
+                {product.price?.toFixed(2)} €
+              </p>
             </div>
           </div>
           <div className="container m-5 d-flex justify-content-center gap-3">
