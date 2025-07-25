@@ -29,7 +29,7 @@ export default function ProductsPage() {
                   <p className="card-text">{product.description}</p>
                   <p className="card-text">{product.category}</p>
                   <p className="card-text">
-                    Valutazione degli utenti: {product.rating.rate}
+                    Valutazione degli utenti:⭐{product.rating.rate}
                   </p>
                   <p className="card-text">
                     Numero di voti:
