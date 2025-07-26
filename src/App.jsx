@@ -19,7 +19,8 @@ function App() {
             <Route path="/about-us" element={<AboutPage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/products/:id" element={<SingleProductPage />} />
-            <Route path="/404" element={<ErrorPage />} />
+            {/* inizializzo il path "*" catch-all per vedere la pagina 404 in ogni route diversa da quelle dichiarate */}
+            <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
