@@ -59,7 +59,13 @@ export default function SingleProductPage() {
           <div className="container m-5 d-flex justify-content-center gap-3">
             <button
               className="fw-semibold rounded-pill px-4 py-2"
-              onClick={() => navigate(`/products/${product.id - 1}`)}
+              onClick={() => {
+                if (product.id > 0) {
+                  navigate(`/products/${product.id - 1}`);
+                } else {
+                  navigate(`*`);
+                }
+              }}
             >
               Previous Item
             </button>

@@ -24,11 +24,11 @@ Creiamo almeno 3 pagine principali:
 
 # Consegna
 
-Completiamo il nostro routing aggiungendo la pagina di dettaglio prodotto!#
+Completiamo il nostro routing aggiungendo la pagina di dettaglio prodotto!
 
 ## Obiettivi
 
-- Nella pagina Prodotti, ogni prodotto deve essere cliccabile (usa <Link>)
+- Nella pagina Prodotti, ogni prodotto deve essere cliccabile (usa Link)
 - Aggiungiamo la pagina di dettaglio per ogni prodotto, con le informazioni prese da https://fakestoreapi.com/products/:id
 - Configuriamo il routing dinamico per leggere l’id del prodotto dalla URL
 
