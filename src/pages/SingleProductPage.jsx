@@ -60,11 +60,11 @@ export default function SingleProductPage() {
             <button
               className="fw-semibold rounded-pill px-4 py-2"
               onClick={() => {
-                if (product.id > 0) {
-                  navigate(`/products/${product.id - 1}`);
-                } else {
-                  navigate(`object-not-found`);
-                }
+                navigate(
+                  product.id > 0
+                    ? `/products/${product.id - 1}`
+                    : "/object-not-found"
+                );
               }}
             >
               Previous Item
