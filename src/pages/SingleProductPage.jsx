@@ -63,7 +63,7 @@ export default function SingleProductPage() {
                 if (product.id > 0) {
                   navigate(`/products/${product.id - 1}`);
                 } else {
-                  navigate(`*`);
+                  navigate(`object-not-found`);
                 }
               }}
             >
