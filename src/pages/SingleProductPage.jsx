@@ -57,14 +57,14 @@ export default function SingleProductPage() {
             </div>
           </div>
           <div className="container m-5 d-flex justify-content-center gap-3">
-            <button
+           <button
               className="fw-semibold rounded-pill px-4 py-2"
               onClick={() => {
-                navigate(
-                  product.id > 0
-                    ? `/products/${product.id - 1}`
-                    : "/object-not-found"
-                );
+                if (product.id > 1) {
+                  navigate(`/products/${product.id - 1}`);
+                } else {
+                  navigate("/object-not-found"); // o torna alla lista
+                }
               }}
             >
               Previous Item
